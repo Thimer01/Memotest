@@ -1,0 +1,85 @@
+*{
+    
+    margin: 0;
+    
+    padding: 0;
+    
+    box-sizing: border-box;
+
+}
+
+@keyframes moveBg {
+    
+    0% {
+    
+        background-position: 0% 50%;
+    
+    }
+    
+    100% {
+    
+        background-position: 100% 50%;
+    
+    }
+
+}
+
+h1{
+
+    text-align: center;
+
+    color: white;
+
+}
+
+.contenedor{
+    
+    width: 100wh;
+    
+    height: 100vh;
+    
+    display: flex;
+    
+    flex-wrap: wrap;
+    
+}
+
+.carta{
+
+    text-align: center;
+    
+    align-content: center;
+    
+    background-color: black;
+    
+    font-size: 50px;
+    
+    text-shadow: 1px 1px 1px gray;
+    
+    height: 300px;
+
+    width: 300px;
+
+    /* border: 4px solid red; */
+
+    margin: 10px;
+
+}
+
+button{
+    
+    display: block;
+
+    margin: 20px auto;
+
+}
+
+body{
+
+    background:linear-gradient(to top left, white 0%, red 25%, blue 50%, orange 75%, yellow 100%);
+
+    background-size: 300% 300%;
+
+    animation: moveBg 10s ease infinite;
+
+}
